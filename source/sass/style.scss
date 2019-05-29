@@ -5,7 +5,7 @@ html, body {
 
 body {
     background: {
-        image: url(../img/puzzle-guide.jpg);
+        image: url(../img/puzzle-bg.jpg);
         position: center center;
         size: 1024px 660px;
         repeat: no-repeat;
@@ -26,7 +26,7 @@ body {
 
 .frame {
     position: absolute;
-    top: 165px; //111px - 165px = 54
+    top: 165px;
     left: 393px;
     img{
         width: 570px;
@@ -42,11 +42,12 @@ body {
 .piece {
     // display: none;
     position: absolute;
+    cursor: pointer;
 }
 
 .piece1 {
-    top: 167.5px;
-    left: 395px;
+    top: 514px;
+    left: 394px;
     img{
         width: 166px;
         height: 155px;
@@ -54,8 +55,8 @@ body {
 }
 
 .piece2 {
-    top: 167.5px;
-    left: 525px;
+    top: 512px;
+    left: 205px;
     img{
         width: 152px;
         height: 195px;
@@ -63,8 +64,8 @@ body {
 }
 
 .piece3 {
-    top: 167.5px;
-    left: 645px;
+    top: 392px;
+    left: 11px;
     img{
         width: 202px;
         height: 155px;
@@ -72,8 +73,8 @@ body {
 }
 
 .piece4 {
-    top: 167.5px;
-    left: 779px;
+    top: 170px;
+    left: 192px;
     img{
         width: 181px;
         height: 315px;
@@ -81,8 +82,8 @@ body {
 }
 
 .piece5 {
-    top: 289px;
-    left: 678px;
+    top: 496px;
+    left: 819px;
     img{
         width: 130px;
         height: 193px;
@@ -90,8 +91,8 @@ body {
 }
 
 .piece6 {
-    top: 324px;
-    left: 496px;
+    top: 514px;
+    left: 572px;
     img{
         width: 210px;
         height: 159px;
@@ -99,10 +100,92 @@ body {
 }
 
 .piece7 {
-    top: 289px;
-    left: 395px;
+    top: 170px;
+    left: 50px;
     img{
         width: 127px;
         height: 193px;
     }
+}
+
+.piece.clicked{
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.piece1.clicked {
+    top: 167.5px;
+    left: 395px;
+    animation-name: piece1Clicked;
+}
+
+.piece2.clicked {
+    top: 167.5px;
+    left: 525px;
+    animation-name: piece2Clicked;
+}
+
+.piece3.clicked {
+    top: 167.5px;
+    left: 645px;
+    animation-name: piece3Clicked;
+}
+
+.piece4.clicked {
+    top: 167.5px;
+    left: 779px;
+    animation-name: piece4Clicked;
+}
+
+.piece5.clicked {
+    top: 289px;
+    left: 678px;
+    animation-name: piece5Clicked;
+}
+
+.piece6.clicked {
+    top: 324px;
+    left: 496px;
+    animation-name: piece6Clicked;
+}
+
+.piece7.clicked {
+    top: 289px;
+    left: 395px;
+    animation-name: piece7Clicked;
+}
+
+@keyframes piece1Clicked {
+    0%   {top: 514px;left: 394px;}
+    100% {top: 167.5px;left: 395px;}
+}
+
+@keyframes piece2Clicked {
+    0%   {top: 512px;left: 205px;}
+    100% {top: 167.5px;left: 525px;}
+}
+
+@keyframes piece3Clicked {
+    0%   {top: 392px;left: 11px;}
+    100% {top: 167.5px;left: 645px;}
+}
+
+@keyframes piece4Clicked {
+    0%   {top: 170px;left: 192px;}
+    100% {top: 167.5px;left: 779px;}
+}
+
+@keyframes piece5Clicked {
+    0%   {top: 496px;left: 819px;}
+    100% {top: 289px;left: 678px;}
+}
+
+@keyframes piece6Clicked {
+    0%   {top: 514px;left: 572px;}
+    100% {top: 324px;left: 496px;}
+}
+
+@keyframes piece7Clicked {
+    0%   {top: 170px;left: 50px;}
+    100% {top: 289px;left: 395px;}
 }

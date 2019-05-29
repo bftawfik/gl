@@ -45,7 +45,7 @@ function scssTask(){
 // JS task: concatenates and uglifies JS files to script.js
 function jsTask(){
     return gulp.src(files.source.jsPath)
-    .pipe(concat('all.js'))
+    .pipe(concat('script.js'))
     .pipe(uglify())
     .pipe(gulp.dest(files.dest.jsPath));
 }

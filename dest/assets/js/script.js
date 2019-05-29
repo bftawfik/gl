@@ -1,0 +1,1 @@
+!function(){"use strict";document.addEventListener("DOMContentLoaded",function(e){for(var t=this.querySelectorAll(".piece"),r=Array.prototype.slice.call(t),n=0;n<r.length;n++)r[n].addEventListener("click",function(e){e.currentTarget.parentNode.appendChild(e.currentTarget),e.currentTarget.classList.add("clicked")})})}();
