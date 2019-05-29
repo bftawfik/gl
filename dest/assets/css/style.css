@@ -1,2 +1,2 @@
-body {
-  background: yellow; }
+.piece{display:none;position:absolute}.piece1{left:5px}.piece1,.piece2{display:block;top:6px}.piece2{left:263px}.piece3{left:503px}.piece3,.piece4{display:block;top:6px}.piece4{left:773px}.piece5{display:block;top:249px;left:571px}.piece6{display:block;top:318px;left:205px}.piece7{display:block;top:249px;left:5px}
+/*# sourceMappingURL=style.css.map */

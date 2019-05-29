@@ -1,3 +1,46 @@
-body{
-    background: yellow
+.piece {
+    display: none;
+    position: absolute;
+}
+
+.piece1 {
+    display: block;
+    top: 6px;
+    left: 5px;
+}
+
+.piece2 {
+    display: block;
+    top: 6px;
+    left: 263px;
+}
+
+.piece3 {
+    display: block;
+    top: 6px;
+    left: 503px;
+}
+
+.piece4 {
+    display: block;
+    top: 6px;
+    left: 773px;
+}
+
+.piece5 {
+    display: block;
+    top: 249px;
+    left: 571px;
+}
+
+.piece6 {
+    display: block;
+    top: 318px;
+    left: 205px;
+}
+
+.piece7 {
+    display: block;
+    top: 249px;
+    left: 5px;
 }
