@@ -21,7 +21,6 @@ body {
 .game {
     width: 100%;
     height: 100%;
-    margin: 0 auto;
 }
 
 .frame {
@@ -155,6 +154,96 @@ body {
     animation-name: piece7Clicked;
 }
 
+.separator{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: none;
+    visibility: hidden;
+    background-color: rgba(255,255,255,0);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.separator.show{
+    display: block;
+    visibility: visible;
+    animation-name: showSeparator;
+}
+
+.product{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: {
+        image: url(../img/product-bg.jpg);
+        position: center center;
+        size: 1024px 660px;
+        repeat: no-repeat;
+    }
+    display: none;
+    visibility: hidden;
+    background-color: rgba(255,255,255,0);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.product.show{
+    display: block;
+    visibility: visible;
+    animation-name: showProduct;
+}
+
+.topRight{
+    img{
+        width: 321px;
+        height: 141px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.bottomLeft{
+    img{
+        width: 291px;
+        height: 105px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.bottomRight{
+    img{
+        width: 321px;
+        height: 115px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.centerCenter{
+    img{
+        width: 872px;
+        height: 235px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+    }
+}
+
+
+
 @keyframes piece1Clicked {
     0%   {top: 514px;left: 394px;}
     100% {top: 167.5px;left: 395px;}
@@ -189,3 +278,14 @@ body {
     0%   {top: 170px;left: 50px;}
     100% {top: 289px;left: 395px;}
 }
+
+@keyframes showSeparator {
+    0%   {display: none;visibility: hidden;background-color: rgba(255,255,255,0)}
+    100% {display: block;visibility: visible;background-color: rgba(255,255,255,1)}
+}
+
+@keyframes showProduct {
+    0%   {display: none;visibility: hidden;background-color: rgba(255,255,255,0)}
+    100% {display: block;visibility: visible;background-color: rgba(255,255,255,1)}
+}
+
