@@ -7,20 +7,17 @@ body {
     background: {
         image: url(../img/puzzle-bg.jpg);
         position: center center;
-        size: 1024px 660px;
-        repeat: no-repeat;
+        size: 1373px 1410px;
+        repeat: repeat;
     }
-}
-.wraper {
-    width: 100%;
-    max-width: 1024px;
-    height: 100vh;
-    margin: 0 auto;
 }
 
 .game {
     width: 100%;
-    height: 100%;
+    max-width: 1024px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
 }
 
 .frame {
@@ -42,6 +39,16 @@ body {
     // display: none;
     position: absolute;
     cursor: pointer;
+}
+
+.pieceMan {
+    position: absolute;
+    top: 167.5px;
+    left: 779px;
+    img{
+        width: 181px;
+        height: 315px;
+    }
 }
 
 .piece1 {
@@ -72,15 +79,6 @@ body {
 }
 
 .piece4 {
-    top: 170px;
-    left: 192px;
-    img{
-        width: 181px;
-        height: 315px;
-    }
-}
-
-.piece5 {
     top: 496px;
     left: 819px;
     img{
@@ -89,7 +87,7 @@ body {
     }
 }
 
-.piece6 {
+.piece5 {
     top: 514px;
     left: 572px;
     img{
@@ -98,7 +96,7 @@ body {
     }
 }
 
-.piece7 {
+.piece6 {
     top: 170px;
     left: 50px;
     img{
@@ -131,24 +129,18 @@ body {
 }
 
 .piece4.clicked {
-    top: 167.5px;
-    left: 779px;
-    animation-name: piece4Clicked;
-}
-
-.piece5.clicked {
     top: 289px;
     left: 678px;
     animation-name: piece5Clicked;
 }
 
-.piece6.clicked {
+.piece5.clicked {
     top: 324px;
     left: 496px;
     animation-name: piece6Clicked;
 }
 
-.piece7.clicked {
+.piece6.clicked {
     top: 289px;
     left: 395px;
     animation-name: piece7Clicked;
@@ -160,18 +152,18 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: white;
     display: none;
     visibility: hidden;
-    background-color: rgba(255,255,255,0);
+    background-color: white;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    // animation-delay: 2s;
 }
 
 .separator.show{
     display: block;
     visibility: visible;
+    opacity: 0;
     animation-name: showSeparator;
 }
 
@@ -184,20 +176,21 @@ body {
     background: {
         image: url(../img/product-bg.jpg);
         position: center center;
-        size: 1024px 660px;
-        repeat: no-repeat;
+        size: 1373px 1410px;
+        repeat: repeat;
     }
     display: none;
     visibility: hidden;
-    background-color: rgba(255,255,255,0);
+    background-color: white;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .product.show{
     display: block;
     visibility: visible;
+    opacity: 0;
     animation-name: showProduct;
 }
 
@@ -280,12 +273,12 @@ body {
 }
 
 @keyframes showSeparator {
-    0%   {display: none;visibility: hidden;background-color: rgba(255,255,255,0)}
-    100% {display: block;visibility: visible;background-color: rgba(255,255,255,1)}
+    0%   {display: none;visibility: hidden;opacity: 0;}
+    100% {display: block;visibility: visible;opacity: 1;}
 }
 
 @keyframes showProduct {
-    0%   {display: none;visibility: hidden;background-color: rgba(255,255,255,0)}
-    100% {display: block;visibility: visible;background-color: rgba(255,255,255,1)}
+    0%   {display: none;visibility: hidden;opacity: 0;}
+    100% {display: block;visibility: visible;opacity: 1;}
 }
 
